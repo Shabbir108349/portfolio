@@ -10,15 +10,21 @@
 </head>
 
 <body>
-
-    <!-- Header -->
     <header>
-        <nav>
-            <h2>Portfolio</h2>
-            <ul class="nav-links">
-                <li><a href="resume/shabbir.pdf" target="_blank">Resume</a></li>
+        <nav class="navbar">
+            <h2 class="logo">Portfolio</h2>
+
+            <!-- Hamburger -->
+            <div class="menu-btn" id="menuBtn">
+                ☰
+            </div>
+
+            <!-- Sidebar -->
+            <ul class="nav-links" id="navLinks">
+                <li><a href="resume/My Resume.pdf" target="_blank">Resume</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
+                <li><a href="#languages">Languages</a></li>
                 <li><a href="#about">About Me</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
@@ -32,7 +38,7 @@
                     <p>Spring Boot Backend Developer | Remote-Friendly | Freelancer</p>
                     <a href="#projects" class="btn" id="workBtn">View My Work</a>
                 </div>
-                
+
                 <div class="hero-left">
                     <div class="profile-circle">
                         <img src="picture/shabbir.png" alt="My Photo">
@@ -67,17 +73,18 @@
 
             <div class="card">
                 <h3>Backend Expertise</h3>
-                <p>REST APIs, Spring Security 6, JWT, Role-based Auth, WebSocket, Testing</p>
+                <p>REST APIs, Spring Security 6, JWT, Role-based Auth, WebSocket, Testing, Database Connectivity,
+                    Scheduler, External API integration</p>
             </div>
 
             <div class="card">
                 <h3>Tools</h3>
-                <p>Git, GitHub, Docker, Firebase, Cloudinary</p>
+                <p>Git, GitHub, Render, Docker, Firebase, Cloudinary</p>
             </div>
 
             <div class="card">
                 <h3>System Design</h3>
-                <p>Monolithic & Microservices, Scaling, Load Balancing, CDN</p>
+                <p>Monolithic & Microservices, Scaling, Load Balancing, CDN,UDP & TCP Protocol</p>
             </div>
 
         </div>
@@ -90,25 +97,27 @@
 
             <div class="project-card">
                 <h3>File Sharing Application</h3>
-                <p>📁 Real-Time File Sharing App (Spring Boot + WebRTC + Javascript + Docker)</p>
+                <p>Full Stack Real-Time File Sharing App (Spring Boot + WebRTC + Javascript + Docker)</p>
                 <a href="https://github.com/Shabbir108349/file-sharing-udp" target="_blank">View on GitHub</a>
-                <a style="margin-left: 50px;" href="https://file-udp.onrender.com/view" target="_blank">Live App</a>
+                <a style="margin-left: 50px;" href="https://file-udp.onrender.com/file" target="_blank">Live App</a>
             </div>
 
             <div class="project-card">
                 <h3>Helper Chat</h3>
-                <p>Real-time chat app using WebSocket, Spring Boot & Thymeleaf.</p>
+                <p>Full Stack Real-time group chating app using WebSocket, Spring Boot & Thymeleaf.</p>
                 <a href="https://github.com/Shabbir108349/Helper" target="_blank">View on GitHub</a>
+                <a style="margin-left: 50px;" href="https://chat-app-l06s.onrender.com/home" target="_blank">Live
+                    App</a>
             </div>
 
             <div class="project-card">
                 <h3>Hefazat (Android App)</h3>
-                <p>Stores encrypted personal info with CRUD operations.</p>
+                <p>Stores personal social media acccount info with CRUD operations.</p>
                 <a href="https://apkpure.com/hefazat/com.example.a10project" target="_blank">View App</a>
             </div>
 
             <div class="project-card">
-                <h3>Hefazat Backend</h3>
+                <h3>Hefazat's Backend</h3>
                 <p>Spring Boot backend with JWT security, MongoDB & Docker.</p>
                 <a href="https://github.com/Shabbir108349/Hefazat-s-Backend" target="_blank">View on GitHub</a>
             </div>
@@ -118,19 +127,25 @@
 
     <section id="about" class="sectionSkill">
         <div>
-             <h1>Language Proficiency</h1>
-                <div class="language-card">
+            <h1>Language Proficiency</h1>
+            <div class="language-card">
                 <p><strong>Native / Fluent:</strong> Bangla</p>
                 <p><strong>Comfortable:</strong> English, Hindi, Urdu</p>
-             </div>
-            
-        </div>      
+            </div>
+
+        </div>
     </section>
 
     <section id="about" class="sectionSkill">
         <h1>About Me</h1>
         <p style="max-width: 800px; margin: auto; font-size: 18px; line-height: 1.6;">
-           I am a passionate backend engineer and 2nd-year Computer Science student, specializing in building secure, scalable systems with Java and Spring Boot. I enjoy designing clean APIs, modular architectures, and implementing features like authentication, JWT security, WebSocket communication, and microservices. While backend is my strength, I also work with HTML, CSS, and JavaScript for full-stack understanding. I practice deployment using Docker and Render, and regularly sharpen my problem-solving through Data Structures and Algorithms. My long-term goal is to design large-scale distributed systems, driven by curiosity, discipline, and consistency to build impactful, reliable software solutions.
+            I am a passionate backend engineer and 2nd-year Computer Science student, specializing in building secure,
+            scalable systems with Java and Spring Boot. I enjoy designing clean APIs, modular architectures, and
+            implementing features like authentication, JWT security, WebSocket communication, and microservices. While
+            backend is my strength, I also work with HTML, CSS, and JavaScript for full-stack understanding. I practice
+            deployment using Docker and Render, and regularly sharpen my problem-solving through Data Structures and
+            Algorithms. My long-term goal is to design large-scale distributed systems, driven by curiosity, discipline,
+            and consistency to build impactful, reliable software solutions.
         </p>
     </section>
 
@@ -138,7 +153,8 @@
     <section id="contact" class="sectionContact">
         <h1>Contact</h1>
         <p>Email: <a href="mailto:shabbirhassain24@gmail.com">shabbirhassain24@gmail.com</a></p>
-        <p>Phone: (+88) 013123-54955</p>
+        <p>Phone: <a href="tel:+8801312354955">+880 13123-54955</a></p>
+
         <div class="social-links">
             <a href="http://www.linkedin.com/in/shabbir108349" target="_blank">LinkedIn</a>
             <a href="https://github.com/Shabbir108349" target="_blank">GitHub</a>
@@ -148,7 +164,7 @@
     </section>
 
     <footer>
-        <p>© 2025 Shabbir Hassain. All Rights Reserved.</p>
+        <p>© 2026 Shabbir Hassain. All Rights Reserved.</p>
     </footer>
 
     <script src="script.js"></script>

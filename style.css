@@ -264,3 +264,83 @@ footer {
         padding: 8px 16px;
     }
 }
+
+
+/* side bar; */
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 40px;
+}
+
+/* Hamburger Button */
+.menu-btn {
+    font-size: 28px;
+    cursor: pointer;
+    display: none;
+}
+
+/* Drawer Menu */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+/* MOBILE DRAWER */
+@media (max-width: 768px) {
+
+    .menu-btn {
+        display: block;
+    }
+
+    .nav-links {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 70%;
+        height: 100vh;
+        background: #111;
+        flex-direction: column;
+        padding-top: 80px;
+        transition: 0.3s ease;
+        z-index: 999;
+    }
+
+    .nav-links li {
+        margin: 20px;
+    }
+
+    .nav-links a {
+        color: white;
+        font-size: 18px;
+    }
+
+    /* Active drawer */
+    .nav-active {
+        right: 0;
+    }
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 30px;
+}
+
+/* Portfolio text */
+.logo {
+    font-size: 22px;
+}
+
+/* Hamburger */
+.menu-btn {
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+
